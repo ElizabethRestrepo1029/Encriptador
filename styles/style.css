@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --color-primario: #f0f0f0;
+    --color-secundario: #0A3871;
+    --color-terciario: #ffffff;
+    --color-cuarto: #f0f0f0;
+    --color-hover: #00008B;
+
+    --fuente-Inter: "Inter", sans-serif;
+
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-primario);
+    color: var(--color-primario);
+    font-family: var(--fuente-Inter);
+}
+
+.header {
+    padding: 2% 0% 0% 15%;
+}
+
+.contenido__logo {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 120px;
+    height: 48px;
+}
+
+.contenido__titulo {
+    font-family: var(--fuente-Inter);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px 0;
+    color: var(--color-secundario);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1px;
+}
+
+.contenido__ingreso {
+    width: 100%; /* El campo de texto se ajusta a la izquierda o centro */
+    position: relative;
+    justify-content: center;
+    padding: 5%;
+    
+}
+.contenido__ingreso__texto{
+    position: absolute;
+    width: 42%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    border: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: var(--color-primario)
+}
+.contenido__ingreso__texto::placeholder{
+    color: var(--color-secundario);
+
+}
+
+.contenido__ingreso__texto{
+    top: 158px;
+    left: 200px;
+    width: 500px; /* Se ajusta al 100% del contenedor padre */
+    font-size: 32px;
+    height: 48px;
+    color: var(--color-secundario);
+    
+}
+
+.instruccion{
+    font-size: 12px;
+    color: #808080;
+    width: 229px;
+    margin-top: 551px;
+    
+}
+
+.output__rectangulo {
+    width: 671px;
+    height: 800px;
+    top: 20px;
+    left: 1000px;
+    gap: 0px;
+    border-radius: 32px 0px 0px 0px;
+    opacity: 0px;
+    background-color: var(--color-terciario);
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+.muñeco {
+    max-width: 100%; 
+    height: auto;
+    margin-bottom: 20px;
+}
+.contenedor__salida{
+    width: 336px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.titulo__mensaje {
+    font-weight: bold; 
+    color: #9E9E9E;
+    font-family: var(--fuente-Inter);
+    width: 100%; 
+    font-size: 24px;
+    height: 150px;
+    padding: 10px;
+    background-color: var(--color-terciario);
+    margin-bottom: 5px;
+    gap: 5px;
+
+}
+.parrafo{
+    font-family: var(--fuente-Inter);
+    color: #BDBDBD;
+}
+.botones{
+    width: 635px;
+    margin-top: 34px;
+}
+.button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #D8DFE8;
+    color: #5A67D8;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--color-hover);
+}
+.footer{
+    background-color: var(--color-terciario);
+    padding: 20px;
+    color: #0056b3;
+    text-align: center;
+    font-family: var(--fuente-montserrat);
+    font-size: 1rem;
+    font-weight: 600;
+    justify-content: center;
+}
+@media (max-width: 900px) {
+    .header {
+        padding: 8%;
+    }
+        #contenido__ingreso__texto{
+        font-size: auto;
+    }
+    .output__rectangulo{
+       flex-direction: column-reverse;
+       padding: 5%;
+    }
+   
+  }

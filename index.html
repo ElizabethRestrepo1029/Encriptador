@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador y desencriptador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+        <img class="contenido__logo" src="./assets/Logo.png" alt="Logo alura">
+        </div>
+    </header>
+
+    <main>
+        
+        <section class="container">
+
+            <div class="contenido__ingreso">
+            <h1 class="contenido__titulo">Encriptador y Desencriptador</h1> 
+            <textarea id="texto" class="contenido__ingreso__texto" placeholder="Ingresa tu texto aquí..."></textarea>  
+            <div class="instruccion">
+                <p><i class="bi bi-exclamation-circle-fill"></i>Solo letras minúsculas y sin acento</p>
+            </div>
+            <div class="botones">
+                <button id="encriptar" class="button"  onclick="encriptar()">Encriptar</button>  
+                <button id="desencriptar"class="button" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </div>          
+
+            <div class="output__rectangulo">
+            <img src="./assets/Muñeco.png" alt="imagen"></img>
+            <textarea id="contenido__salida"  class="contenido__salida" placeholder="" readonly></textarea>
+
+            <div class="contenedor__salida">
+            <h2 class="titulo__mensaje">Ningún mensaje fue encontrado</h2>
+            <p class="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>   
+            </div>
+           
+            <button  id="copiar" class="button" onclick="Copiar()">Copiar</button>
+            </div>
+            
+                       
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <p><strong>Desarrollado por Elizabeth Restrepo</strong></p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
